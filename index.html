@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>AI Learning Hub</title>
+
+<!-- BOOTSTRAP CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+
+body {
+    background-color: #f4f6fc;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    background: #10152e;
+}
+
+.hero {
+    background: linear-gradient(120deg,#10152e,#4531a5,#7928ca);
+    color: white;
+    padding: 85px 20px;
+}
+
+.section-title {
+    color: #38217f;
+    font-weight: bold;
+}
+
+.course-card {
+    transition: 0.3s;
+    border: none;
+}
+
+.course-card:hover {
+    transform: translateY(-8px);
+}
+
+.course-icon {
+    font-size: 45px;
+}
+
+footer {
+    background: #10152e;
+    color: white;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+
+<div class="container">
+
+<a class="navbar-brand fw-bold" href="#">
+🤖 AI LEARNING HUB
+</a>
+
+<button class="navbar-toggler" data-bs-toggle="offcanvas"
+data-bs-target="#mobileMenu">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse">
+
+<ul class="navbar-nav ms-auto">
+
+<li class="nav-item">
+<a class="nav-link" href="#home">Home</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="#about">About</a>
+</li>
+
+<li class="nav-item dropdown">
+
+<a class="nav-link dropdown-toggle" href="#"
+data-bs-toggle="dropdown">
+Learning
+</a>
+
+<ul class="dropdown-menu">
+<li><a class="dropdown-item" href="#courses">AI Courses</a></li>
+<li><a class="dropdown-item" href="#faq">AI Questions</a></li>
+<li><a class="dropdown-item" href="#quiz">AI Quiz</a></li>
+</ul>
+
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="#register">Register</a>
+</li>
+
+</ul>
+</div>
+</div>
+</nav>
+
+<!-- OFFCANVAS MOBILE MENU -->
+<div class="offcanvas offcanvas-end" id="mobileMenu">
+
+<div class="offcanvas-header">
+<h5>AI Learning Menu</h5>
+<button class="btn-close" data-bs-dismiss="offcanvas"></button>
+</div>
+
+<div class="offcanvas-body">
+<a href="#home" class="d-block mb-3">Home</a>
+<a href="#about" class="d-block mb-3">About AI</a>
+<a href="#courses" class="d-block mb-3">Courses</a>
+<a href="#quiz" class="d-block mb-3">Quiz</a>
+<a href="#register" class="d-block mb-3">Register</a>
+</div>
+
+</div>
+
+<!-- HERO SECTION -->
+<section class="hero text-center" id="home">
+
+<div class="container">
+
+<span class="badge bg-warning text-dark mb-3">
+Future Technology
+</span>
+
+<h1 class="display-3 fw-bold">
+Explore Artificial Intelligence
+</h1>
+
+<p class="lead">
+Learn AI, Machine Learning, Deep Learning
+and Generative AI.
+</p>
+
+<a href="#courses" class="btn btn-warning btn-lg">
+Start Learning
+</a>
+
+<button class="btn btn-outline-light btn-lg"
+data-bs-toggle="modal" data-bs-target="#welcomeModal">
+Learn More
+</button>
+
+</div>
+</section>
+
+<!-- WELCOME MODAL -->
+<div class="modal fade" id="welcomeModal">
+
+<div class="modal-dialog modal-dialog-centered">
+
+<div class="modal-content">
+
+<div class="modal-header">
+<h5 class="modal-title">Welcome to AI Learning Hub</h5>
+<button class="btn-close" data-bs-dismiss="modal"></button>
+</div>
+
+<div class="modal-body">
+Learn how Artificial Intelligence is changing
+education, business, science and technology.
+</div>
+
+<div class="modal-footer">
+<button class="btn btn-primary" data-bs-dismiss="modal">
+Continue
+</button>
+</div>
+
+</div>
+</div>
+</div>
+
+<!-- CAROUSEL -->
+<div class="container py-5">
+
+<h2 class="section-title text-center mb-4">
+Explore Future Technology
+</h2>
+
+<div id="aiCarousel" class="carousel slide"
+data-bs-ride="carousel">
+
+<div class="carousel-indicators">
+
+<button type="button" data-bs-target="#aiCarousel"
+data-bs-slide-to="0" class="active"></button>
+
+<button type="button" data-bs-target="#aiCarousel"
+data-bs-slide-to="1"></button>
+
+<button type="button" data-bs-target="#aiCarousel"
+data-bs-slide-to="2"></button>
+
+</div>
+
+<div class="carousel-inner rounded">
+
+<div class="carousel-item active">
+<div class="bg-dark text-white text-center p-5">
+<h2>Artificial Intelligence</h2>
+<p>Discover the intelligence of machines.</p>
+</div>
+</div>
+
+<div class="carousel-item">
+<div class="bg-primary text-white text-center p-5">
+<h2>Machine Learning</h2>
+<p>Teach computers to learn from data.</p>
+</div>
+</div>
+
+<div class="carousel-item">
+<div class="bg-success text-white text-center p-5">
+<h2>Generative AI</h2>
+<p>Create new ideas with intelligent technology.</p>
+</div>
+</div>
+
+</div>
+
+<button class="carousel-control-prev"
+data-bs-target="#aiCarousel" data-bs-slide="prev">
+<span class="carousel-control-prev-icon"></span>
+</button>
+
+<button class="carousel-control-next"
+data-bs-target="#aiCarousel" data-bs-slide="next">
+<span class="carousel-control-next-icon"></span>
+</button>
+
+</div>
+</div>
+
+<!-- ABOUT SECTION -->
+<section class="container py-5" id="about">
+
+<h2 class="section-title text-center">
+About Artificial Intelligence
+</h2>
+
+<div class="row mt-4 align-items-center">
+
+<div class="col-md-6">
+<h3>What is AI?</h3>
+
+<p>
+Artificial Intelligence is a branch of computer science
+that enables machines to perform tasks that normally
+require human intelligence.
+</p>
+
+<div class="alert alert-info">
+AI is used in education, healthcare, transportation
+and many other fields.
+</div>
+
+</div>
+
+<div class="col-md-6">
+
+<div class="card shadow p-4">
+<h4>AI Learning Progress</h4>
+
+<p>HTML Basics</p>
+<div class="progress mb-3">
+<div class="progress-bar bg-success"
+style="width:90%">90%</div>
+</div>
+
+<p>Machine Learning</p>
+<div class="progress mb-3">
+<div class="progress-bar bg-primary"
+style="width:65%">65%</div>
+</div>
+
+<p>Deep Learning</p>
+<div class="progress">
+<div class="progress-bar bg-warning"
+style="width:40%">40%</div>
+</div>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- COURSES -->
+<section class="container py-5" id="courses">
+
+<h2 class="section-title text-center mb-4">
+Our AI Courses
+</h2>
+
+<div class="row g-4">
+
+<div class="col-lg-4 col-md-6">
+
+<div class="card course-card shadow h-100">
+
+<div class="card-body text-center">
+
+<div class="course-icon">🤖</div>
+
+<h4>Artificial Intelligence</h4>
+
+<span class="badge bg-success">Beginner</span>
+
+<p class="mt-3">
+Learn AI fundamentals and intelligent systems.
+</p>
+
+<button class="btn btn-primary"
+onclick="showCourse('Artificial Intelligence')">
+View Course
+</button>
+
+</div>
+</div>
+</div>
+
+<div class="col-lg-4 col-md-6">
+
+<div class="card course-card shadow h-100">
+
+<div class="card-body text-center">
+
+<div class="course-icon">🧠</div>
+
+<h4>Machine Learning</h4>
+
+<span class="badge bg-warning text-dark">Intermediate</span>
+
+<p class="mt-3">
+Understand data, algorithms and predictions.
+</p>
+
+<button class="btn btn-primary"
+onclick="showCourse('Machine Learning')">
+View Course
+</button>
+
+</div>
+</div>
+</div>
+
+<div class="col-lg-4 col-md-6">
+
+<div class="card course-card shadow h-100">
+
+<div class="card-body text-center">
+
+<div class="course-icon">🔬</div>
+
+<h4>Deep Learning</h4>
+
+<span class="badge bg-danger">Advanced</span>
+
+<p class="mt-3">
+Explore neural networks and deep learning.
+</p>
+
+<button class="btn btn-primary"
+onclick="showCourse('Deep Learning')">
+View Course
+</button>
+
+</div>
+</div>
+</div>
+
+<div class="col-lg-4 col-md-6">
+
+<div class="card course-card shadow h-100">
+
+<div class="card-body text-center">
+
+<div class="course-icon">💬</div>
+
+<h4>Natural Language Processing</h4>
+
+<span class="badge bg-success">Beginner</span>
+
+<p class="mt-3">
+Learn how computers understand human language.
+</p>
+
+<button class="btn btn-primary"
+onclick="showCourse('Natural Language Processing')">
+View Course
+</button>
+
+</div>
+</div>
+</div>
+
+<div class="col-lg-4 col-md-6">
+
+<div class="card course-card shadow h-100">
+
+<div class="card-body text-center">
+
+<div class="course-icon">🎨</div>
+
+<h4>Generative AI</h4>
+
+<span class="badge bg-warning text-dark">Intermediate</span>
+
+<p class="mt-3">
+Learn how AI generates text, images and ideas.
+</p>
+
+<button class="btn btn-primary"
+onclick="showCourse('Generative AI')">
+View Course
+</button>
+
+</div>
+</div>
+</div>
+
+<div class="col-lg-4 col-md-6">
+
+<div class="card course-card shadow h-100">
+
+<div class="card-body text-center">
+
+<div class="course-icon">🦾</div>
+
+<h4>Robotics</h4>
+
+<span class="badge bg-danger">Advanced</span>
+
+<p class="mt-3">
+Explore automation and intelligent robots.
+</p>
+
+<button class="btn btn-primary"
+onclick="showCourse('Robotics')">
+View Course
+</button>
+
+</div>
+</div>
+</div>
+
+</div>
+</section>
+
+<!-- COURSE DETAILS MODAL -->
+<div class="modal fade" id="courseModal">
+
+<div class="modal-dialog modal-dialog-centered">
+
+<div class="modal-content">
+
+<div class="modal-header">
+<h5 class="modal-title" id="courseTitle">Course Details</h5>
+<button class="btn-close" data-bs-dismiss="modal"></button>
+</div>
+
+<div class="modal-body" id="courseDescription">
+Learn more about this course.
+</div>
+
+<div class="modal-footer">
+<button class="btn btn-secondary" data-bs-dismiss="modal">
+Close
+</button>
+</div>
+
+</div>
+</div>
+</div>
+
+<!-- COURSE TABLE -->
+<section class="container py-5">
+
+<h2 class="section-title text-center mb-4">
+Course Information
+</h2>
+
+<div class="table-responsive">
+
+<table class="table table-bordered table-striped table-hover">
+
+<thead class="table-dark">
+<tr>
+<th>Course</th>
+<th>Level</th>
+<th>Duration</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>Artificial Intelligence</td>
+<td>Beginner</td>
+<td>2 Weeks</td>
+</tr>
+
+<tr>
+<td>Machine Learning</td>
+<td>Intermediate</td>
+<td>4 Weeks</td>
+</tr>
+
+<tr>
+<td>Deep Learning</td>
+<td>Advanced</td>
+<td>6 Weeks</td>
+</tr>
+
+<tr>
+<td>Generative AI</td>
+<td>Intermediate</td>
+<td>3 Weeks</td>
+</tr>
+</tbody>
+
+</table>
+</div>
+
+<!-- PAGINATION -->
+<nav aria-label="Course pages">
+<ul class="pagination justify-content-center">
+
+<li class="page-item disabled">
+<a class="page-link" href="#">Previous</a>
+</li>
+
+<li class="page-item active">
+<a class="page-link" href="#courses">1</a>
+</li>
+
+<li class="page-item">
+<a class="page-link" href="#courses">2</a>
+</li>
+
+<li class="page-item">
+<a class="page-link" href="#courses">Next</a>
+</li>
+
+</ul>
+</nav>
+
+</section>
+
+<!-- FAQ ACCORDION -->
+<section class="container py-5" id="faq">
+
+<h2 class="section-title text-center mb-4">
+Frequently Asked Questions
+</h2>
+
+<div class="accordion" id="aiAccordion">
+
+<div class="accordion-item">
+
+<h2 class="accordion-header">
+<button class="accordion-button" data-bs-toggle="collapse"
+data-bs-target="#answer1">
+What is Artificial Intelligence?
+</button>
+</h2>
+
+<div id="answer1" class="accordion-collapse collapse show"
+data-bs-parent="#aiAccordion">
+
+<div class="accordion-body">
+AI is the ability of computer systems to perform
+tasks that require human-like intelligence.
+</div>
+
+</div>
+</div>
+
+<div class="accordion-item">
+
+<h2 class="accordion-header">
+<button class="accordion-button collapsed"
+data-bs-toggle="collapse" data-bs-target="#answer2">
+What is Machine Learning?
+</button>
+</h2>
+
+<div id="answer2" class="accordion-collapse collapse"
+data-bs-parent="#aiAccordion">
+
+<div class="accordion-body">
+Machine Learning allows computers to learn
+patterns from data and make predictions.
+</div>
+
+</div>
+</div>
+
+<div class="accordion-item">
+
+<h2 class="accordion-header">
+<button class="accordion-button collapsed"
+data-bs-toggle="collapse" data-bs-target="#answer3">
+What is Generative AI?
+</button>
+</h2>
+
+<div id="answer3" class="accordion-collapse collapse"
+data-bs-parent="#aiAccordion">
+
+<div class="accordion-body">
+Generative AI creates new content such as
+text, images and audio.
+</div>
+
+</div>
+</div>
+
+</div>
+</section>
+
+<!-- QUIZ -->
+<section class="container py-5" id="quiz">
+
+<h2 class="section-title text-center mb-4">
+AI Knowledge Quiz
+</h2>
+
+<div class="card shadow p-4 mx-auto"
+style="max-width:600px">
+
+<h5>1. What does AI stand for?</h5>
+
+<div class="form-check">
+<input class="form-check-input" type="radio"
+name="q1" value="wrong">
+<label class="form-check-label">Automatic Internet</label>
+</div>
+
+<div class="form-check">
+<input class="form-check-input" type="radio"
+name="q1" value="correct">
+<label class="form-check-label">Artificial Intelligence</label>
+</div>
+
+<div class="form-check">
+<input class="form-check-input" type="radio"
+name="q1" value="wrong">
+<label class="form-check-label">Advanced Information</label>
+</div>
+
+<hr>
+
+<h5>2. Which is a branch of AI?</h5>
+
+<div class="form-check">
+<input class="form-check-input" type="radio"
+name="q2" value="correct">
+<label class="form-check-label">Machine Learning</label>
+</div>
+
+<div class="form-check">
+<input class="form-check-input" type="radio"
+name="q2" value="wrong">
+<label class="form-check-label">Typing</label>
+</div>
+
+<div class="form-check">
+<input class="form-check-input" type="radio"
+name="q2" value="wrong">
+<label class="form-check-label">Painting</label>
+</div>
+
+<hr>
+
+<h5>3. Which AI creates new content?</h5>
+
+<div class="form-check">
+<input class="form-check-input" type="radio"
+name="q3" value="wrong">
+<label class="form-check-label">Calculator</label>
+</div>
+
+<div class="form-check">
+<input class="form-check-input" type="radio"
+name="q3" value="correct">
+<label class="form-check-label">Generative AI</label>
+</div>
+
+<button class="btn btn-primary mt-3"
+onclick="checkQuiz()">
+Submit Quiz
+</button>
+
+<div id="quizResult" class="alert alert-info mt-3 d-none">
+</div>
+
+</div>
+</section>
+
+<!-- REGISTRATION FORM -->
+<section class="container py-5" id="register">
+
+<h2 class="section-title text-center mb-4">
+Student Registration
+</h2>
+
+<div class="card shadow p-4 mx-auto"
+style="max-width:600px">
+
+<form id="studentForm">
+
+<div class="mb-3">
+<label class="form-label">Full Name</label>
+<input type="text" class="form-control"
+placeholder="Enter your name" required>
+</div>
+
+<div class="mb-3">
+<label class="form-label">Email Address</label>
+<input type="email" class="form-control"
+placeholder="Enter email" required>
+</div>
+
+<div class="mb-3">
+<label class="form-label">Phone Number</label>
+<input type="tel" class="form-control"
+placeholder="Enter phone number"
+pattern="[0-9]{10}" required>
+</div>
+
+<div class="mb-3">
+<label class="form-label">Select Course</label>
+<select class="form-select" required>
+<option value="">Choose a course</option>
+<option>Artificial Intelligence</option>
+<option>Machine Learning</option>
+<option>Deep Learning</option>
+<option>Generative AI</option>
+<option>Robotics</option>
+</select>
+</div>
+
+<div class="form-check mb-3">
+<input class="form-check-input"
+type="checkbox" required>
+<label class="form-check-label">
+I agree to the terms and conditions.
+</label>
+</div>
+
+<button type="submit" class="btn btn-success w-100">
+Submit Registration
+</button>
+
+</form>
+</div>
+</section>
+
+<!-- TOAST NOTIFICATION -->
+<div class="toast-container position-fixed bottom-0 end-0 p-3">
+
+<div id="successToast" class="toast">
+
+<div class="toast-header">
+<strong class="me-auto">AI Learning Hub</strong>
+<small>Now</small>
+<button class="btn-close"
+data-bs-dismiss="toast"></button>
+</div>
+
+<div class="toast-body">
+Registration submitted successfully!
+</div>
+
+</div>
+</div>
+
+<!-- FOOTER -->
+<footer class="text-center p-4">
+
+<h4>🤖 AI LEARNING HUB</h4>
+
+<p>Learn Today. Innovate Tomorrow.</p>
+
+<p>© 2026 AI Learning Hub | All Rights Reserved</p>
+
+<a href="#home" class="btn btn-outline-light">
+Back to Top
+</a>
+
+</footer>
+
+<!-- BOOTSTRAP JAVASCRIPT -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
+</script>
+
+<!-- CUSTOM JAVASCRIPT -->
+<script>
+
+// COURSE DETAILS
+
+function showCourse(course) {
+
+document.getElementById("courseTitle").innerText = course;
+
+document.getElementById("courseDescription").innerText =
+"Welcome to " + course +
+"! This course helps students understand important concepts and applications.";
+
+let modal = new bootstrap.Modal(
+document.getElementById("courseModal")
+);
+
+modal.show();
+
+}
+
+// QUIZ FUNCTION
+
+function checkQuiz() {
+
+let score = 0;
+
+for(let i = 1; i <= 3; i++) {
+
+let answer = document.querySelector(
+'input[name="q' + i + '"]:checked'
+);
+
+if(answer && answer.value === "correct") {
+score++;
+}
+
+}
+
+let result = document.getElementById("quizResult");
+
+result.classList.remove("d-none");
+
+result.innerText =
+"Your score is " + score + " out of 3!";
+
+}
+
+// REGISTRATION FUNCTION
+
+document.getElementById("studentForm")
+.addEventListener("submit", function(event) {
+
+event.preventDefault();
+
+let toastElement =
+document.getElementById("successToast");
+
+let toast = new bootstrap.Toast(toastElement);
+
+toast.show();
+
+this.reset();
+
+});
+
+</script>
+
+</body>
+</html>
